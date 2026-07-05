@@ -1,5 +1,6 @@
 # Default type for anything under /firmware.
 type firmware_file, system_file_type, fs_type, contextmount_type;
+type vendor_firmware_file, fs_type, contextmount_type, vendor_file_type;
 
 #Define the qmux socket type
 type qmuxd_socket, file_type;
@@ -184,7 +185,7 @@ type  proc_dirty_ratio, fs_type;
 type mmi_socket, file_type;
 
 # hbtp config file
-type hbtp_cfg_file, file_type;
+type hbtp_cfg_file, file_type, vendor_file_type;
 type hbtp_log_file, file_type, data_file_type;
 type hbtp_kernel_sysfs, file_type, sysfs_type;
 
@@ -228,7 +229,7 @@ type mdtp_svc_app_data_file, file_type, app_data_file_type;
 type ssr_ramdump_data_file, file_type, data_file_type, core_data_file_type;
 
 # Regionalization files
-type regionalization_file, file_type;
+type regionalization_file, file_type, vendor_file_type;
 
 # /data/system/swap/swapfile - swapfile
 type swap_data_file, file_type, data_file_type, core_data_file_type;
