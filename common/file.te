@@ -1,5 +1,5 @@
 # Default type for anything under /firmware.
-type firmware_file, fs_type, contextmount_type;
+type firmware_file, system_file_type, fs_type, contextmount_type;
 
 #Define the qmux socket type
 type qmuxd_socket, file_type;
@@ -62,7 +62,7 @@ type sysfs_msmuart_file, sysfs_type, fs_type;
 
 # Storage RFS file types
 type rfs_file, file_type, data_file_type, core_data_file_type;
-type rfs_system_file, file_type;
+type rfs_system_file, system_file_type, file_type;
 type rfs_shared_hlos_file, file_type, data_file_type, core_data_file_type;
 
 #mm-pp-daemon file type for sysfs access
